@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Prompt', sans-serif !important;
+}
+
+
+
+/* Top Bar */
+
+.top-bar {
+    display: flex;
+    padding: 15px 15px;
+}
+
+.top-bar a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.top-bar a:hover {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* Box Content */
+
+.header {
+    text-align: center;
+}
+
+.box {
+    width: 40%;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.366),
+        0 32px 64px -48px rgb(0, 0, 0);
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.box h5 {
+    text-align: center;
+    line-height: 0%;
+}
+
+.box h3 {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Top Box */
+.top-box {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#income-box {
+    background: rgba(19, 255, 86, 0.718);
+}
+
+#income-box:hover {
+    background: #13ff56dd;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.136),
+        0 32px 64px -48px rgb(0, 0, 0);
+}
+
+#expense-box {
+    background: rgba(255, 62, 48, 0.706);
+}
+
+#expense-box:hover {
+    background: #ff3e30cb;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.136),
+        0 32px 64px -48px rgb(0, 0, 0);
+}
+
+/* Second Box */
+.second-box {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.info {
+    text-align: right;
+    line-height: 0%;
+}
+
+#balance-box {
+    background: #2958ffa1;
+}
+
+#balance-box:hover {
+    background: #2957ffc0;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.136),
+        0 32px 64px -48px rgb(0, 0, 0);
+}
+
+#pie-chart {
+    background: #f0efef;
+}
+
+#pie-chart:hover {
+    background: #eaeaea;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.301),
+        0 32px 64px -48px rgba(0, 0, 0, 0.497);
+}
+
+/* Chart */
+.chart-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.chart {
+    background: #f0efef;
+    width: 85%;
+    height: 300px;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.301),
+        0 32px 64px -48px rgba(0, 0, 0, 0.288);
+}
+
+.chart h3 {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.chart:hover {
+    background: #eaeaea;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.301),
+        0 32px 64px -48px rgba(0, 0, 0, 0.497);
+}
+
+
+
+/* Income Page */
+
+/* Balance Box */
+
+.balance-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px 25px;
+}
+
+.balance {
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    background: #2958ffa1;
+    width: 50%;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.balance:hover {
+    background: #2957ffb8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8c8c8c;
+    /* Bootstrap blue */
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.circle-btn:hover {
+    background-color: #3cc33a;
+}
+
+/* Table */
+
+.table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10%;
+
+}
+
+
+th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Form */
+.add-form {
+    display: flex;
+    justify-content: center;
+    padding: 25px 25px;
+
+}
+
+.box-form {
+    position: relative;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    background: #ffffffa1;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.301),
+        0 32px 64px -48px rgba(0, 0, 0, 0.288);
+}
+
+label {
+    margin-right: 5%;
+}
+
+input {
+    margin-bottom: 15px;
+    border-radius: 10%;
+    border-style: none;
+    background-color: #f3f3f3;
+    width: 50%;
+}
+
+input:hover {
+    background-color: #e1e1e1;
+    border-style: none;
+}
+
+#cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#cancel:hover {
+    color: red;
+}
+
+#confirm {
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    border-radius: 15%;
+    border-style: none;
+    background-color: #d5d5d5;
+}
+
+#confirm:hover {
+    background-color: rgb(38, 244, 76);
+}
+
+
+
+.btn {
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 0px 10px;
+}
+
+#update {
+    color: #0000006a;
+    background-color: rgba(249, 238, 36, 0.456);
+    margin-right: 10px;
+}
+
+#update:hover {
+    color: #000000;
+    background-color: rgb(255, 244, 32);
+}
+
+#delete {
+    color: #ffffffd4;
+    background-color: rgba(255, 30, 30, 0.456);
+    margin-right: 5px;
+}
+
+#delete:hover {
+    color: #ffffff;
+    background-color: rgba(255, 30, 30, 0.86);
+    margin-right: 5px;
+}
+
+#back {
+    background-color: #d5d5d5;
+}
+
+#back:hover {
+    background-color: #b4b4b4;
+}
+
+/* Expense Page */
+.expensebox {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px 25px;
+}
+
+.expense {
+
+    display: flex;
+    justify-content: space-around;
+    background: #ff3e30b4;
+    width: 50%;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expense:hover {
+    background: #ff3e30cb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
+}
+
+.filter-tab {
+    margin-top: 3%;
+    justify-content: center;
+
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.filter-tab .option button {
+    background-color: #eeeff1;
+    /* Soft blue */
+    color: rgb(100, 100, 100);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-tab .option button:hover {
+    background-color: #bcbcbe;
+    /* Darker on hover */
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-tab .option button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: make the Reset button look different */
+.filter-tab .option .btn-secondary {
+    background-color: #a1a1a1;
+    /* Red */
+    color: white;
+}
+
+.filter-tab .option .btn-secondary:hover {
+    background-color: #D32F2F;
+}
+
+#filterform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#filterform input[type="date"],
+#filterform input[type="week"],
+#filterform input[type="month"] {
+    background-color: #f5f4f4;
+    /* Soft blue */
+    color: rgb(100, 100, 100);
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#filterform button#view {
+    background-color: #5591d6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#filterform button#view:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+#filterform button#view:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#back {
+    margin-left: 20%;
+    background-color: #a4a4a4;
+    /* Soft blue */
+    color: rgb(241, 241, 241);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.income-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px 25px;
+}
+
+.income {
+    display: flex;
+    justify-content: space-around;
+    background: #13ff56b7;
+    width: 50%;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.income:hover {
+    background: #13ff56dd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
+}
+
+.income-top-box {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#total-income-box {
+    background: #13ff56b7;
+    width: 30%;
+}
+
+#total-income-box:hover {
+    background: #13ff56dd;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.136),
+        0 32px 64px -48px rgb(0, 0, 0);
+}
+
+#total-balance-box {
+    background: #2958ffa1;
+}
+
+#total-balance-box:hover {
+    background: #2957ffb8;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.136),
+        0 32px 64px -48px rgb(0, 0, 0);
+}
+
+
+.select {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  
+  .select button {
+    background: #919094; /* Indigo 600 */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .select #income-btn:hover {
+    background: #14be11; /* Indigo 700 */
+    transform: translateY(-2px);
+  }
+  .select #expense-btn:hover {
+    background: #c42e10; /* Indigo 700 */
+    transform: translateY(-2px);
+  }
+  
+  .select button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
